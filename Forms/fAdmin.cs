@@ -19,6 +19,10 @@ namespace Project_App.Forms
 
         BindingSource accountList = new BindingSource();
 
+        BindingSource categoryList = new BindingSource();
+
+        BindingSource tableList = new BindingSource();
+
         public Account loginAccount;
         public fAdmin()
         {
@@ -38,44 +42,64 @@ namespace Project_App.Forms
         {
             dtgvFood.DataSource = foodList;
             dtgvAccount.DataSource = accountList;
+            dtgvCategory.DataSource = categoryList;
+            dtgvTable.DataSource = tableList;
 
-            //LoadDateTimePickerBill();
-            //LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+            LoadDateTimePickerBill();
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
             LoadListFood();
             LoadAccount();
+            LoadCategory();
+            LoadTable();
             LoadCategoryIntoCombobox(cbFoodCategory);
-            //AddFoodBinding();
+            AddFoodBinding();
             AddAccountBinding();
+            AddCategoryBinding();
+            AddTableBinding();
         }
 
         void AddAccountBinding()
         {
             txbUserName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "UserName", true, DataSourceUpdateMode.Never));
             txbDisplayName.DataBindings.Add(new Binding("Text", dtgvAccount.DataSource, "DisplayName", true, DataSourceUpdateMode.Never));
-            numericUpDown1.DataBindings.Add(new Binding("Value", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
+            nmAccountType.DataBindings.Add(new Binding("Value", dtgvAccount.DataSource, "Type", true, DataSourceUpdateMode.Never));
         }
 
         void LoadAccount()
         {
             accountList.DataSource = AccountDAO.Instance.GetListAccount();
         }
-        //void LoadDateTimePickerBill()
-        //{
-        //    DateTime today = DateTime.Now;
-        //    dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
-        //    dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
-        //}
-        //void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
-        //{
-        //    dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
-        //}
+        void LoadDateTimePickerBill()
+        {
+            DateTime today = DateTime.Now;
+            dtpkFromDate.Value = new DateTime(today.Year, today.Month, 1);
+            dtpkToDate.Value = dtpkFromDate.Value.AddMonths(1).AddDays(-1);
+        }
+        void LoadListBillByDate(DateTime checkIn, DateTime checkOut)
+        {
+            dtgvBill.AutoSize = true;
+            dtgvBill.DataSource = BillDAO.Instance.GetBillListByDate(checkIn, checkOut);
+        }
 
-        //void AddFoodBinding()
-        //{
-        //    txbFoodName.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Name", true, DataSourceUpdateMode.Never));
-        //    txbFoodID.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID", true, DataSourceUpdateMode.Never));
-        //    nmFoodPrice.DataBindings.Add(new Binding("Value", dtgvFood.DataSource, "Price", true, DataSourceUpdateMode.Never));
-        //}
+        void AddFoodBinding()
+        {
+            txbFoodName.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "Name", true, DataSourceUpdateMode.Never));
+            txbFoodId.DataBindings.Add(new Binding("Text", dtgvFood.DataSource, "ID", true, DataSourceUpdateMode.Never));
+            nmFoodPrice.DataBindings.Add(new Binding("Value", dtgvFood.DataSource, "Price", true, DataSourceUpdateMode.Never));
+        }
+
+        void AddCategoryBinding()
+        {
+            txbCategoyId.DataBindings.Add(new Binding("Text", dtgvCategory.DataSource, "ID", true, DataSourceUpdateMode.Never));
+            txbCategory.DataBindings.Add(new Binding("Text", dtgvCategory.DataSource, "Name", true, DataSourceUpdateMode.Never));
+        }
+
+        void AddTableBinding()
+        {
+            txbTableId.DataBindings.Add(new Binding("Text", dtgvTable.DataSource, "Id", true, DataSourceUpdateMode.Never));
+            txbNameTable.DataBindings.Add(new Binding("Text", dtgvTable.DataSource, "Name", true, DataSourceUpdateMode.Never));
+            txbStatus.DataBindings.Add(new Binding("Text", dtgvTable.DataSource, "Status", true, DataSourceUpdateMode.Never));
+        }
 
         void LoadCategoryIntoCombobox(ComboBox cb)
         {
@@ -87,6 +111,16 @@ namespace Project_App.Forms
             foodList.DataSource = FoodDAO.Instance.GetListFood();
         }
 
+        void LoadCategory()
+        { 
+            categoryList.DataSource = CategoryDAO.Instance.GetListCategory();
+        }
+
+        void LoadTable()
+        {
+            tableList.DataSource = TableDAO.Instance.LoadDataTableList();
+        }
+        
         void AddAccount(string userName, string displayName, int type)
         {
             if (AccountDAO.Instance.InsertAccount(userName, displayName, type))
@@ -152,7 +186,7 @@ namespace Project_App.Forms
         {
             string userName = txbUserName.Text;
             string displayName = txbDisplayName.Text;
-            int type = (int)numericUpDown1.Value;
+            int type = (int)nmFoodPrice.Value;
 
             AddAccount(userName, displayName, type);
         }
@@ -168,7 +202,7 @@ namespace Project_App.Forms
         {
             string userName = txbUserName.Text;
             string displayName = txbDisplayName.Text;
-            int type = (int)numericUpDown1.Value;
+            int type = (int)nmFoodPrice.Value;
 
             EditAccount(userName, displayName, type);
         }
@@ -188,10 +222,10 @@ namespace Project_App.Forms
         }
 
 
-        //private void btnSearchFood_Click(object sender, EventArgs e)
-        //{
-        //    foodList.DataSource = SearchFoodByName(txbSearchFoodName.Text);
-        //}
+        private void btnSearchFood_Click(object sender, EventArgs e)
+        {
+            foodList.DataSource = SearchFoodByName(txbSearchFoodName.Text);
+        }
         private void txbFoodID_TextChanged(object sender, EventArgs e)
         {
             try
@@ -222,50 +256,49 @@ namespace Project_App.Forms
             catch { }
         }
 
-        //private void btnAddFood_Click(object sender, EventArgs e)
-        //{
-        //    string name = txbFoodName.Text;
-        //    int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
-        //    float price = (float)nmFoodPrice.Value;
 
-        //    if (FoodDAO.Instance.InsertFood(name, categoryID, price))
-        //    {
-        //        MessageBox.Show("Thêm món thành công");
-        //        LoadListFood();
-        //        if (insertFood != null)
-        //            insertFood(this, new EventArgs());
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Có lỗi khi thêm thức ăn");
-        //    }
-        //}
+        private void btnAddFood_Click(object sender, EventArgs e)
+        {
+            string name = txbFoodName.Text;
+            int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
+            float price = (float)nmFoodPrice.Value;
 
-        //private void btnEditFood_Click(object sender, EventArgs e)
-        //{
-        //    string name = txbFoodName.Text;
-        //    int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
-        //    float price = (float)nmFoodPrice.Value;
-        //    int id = Convert.ToInt32(txbFoodID.Text);
+            if (FoodDAO.Instance.InsertFood(name, categoryID, price))
+            {
+                MessageBox.Show("Thêm món thành công");
+                LoadListFood();
+                if (insertFood != null)
+                    insertFood(this, new EventArgs());
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi thêm thức ăn");
+            }
+        }
 
-        //    if (FoodDAO.Instance.UpdateFood(id, name, categoryID, price))
-        //    {
-        //        MessageBox.Show("Sửa món thành công");
-        //        LoadListFood();
-        //        if (updateFood != null)
-        //            updateFood(this, new EventArgs());
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Có lỗi khi sửa thức ăn");
-        //    }
-        //}
+        private void btnEditFood_Click(object sender, EventArgs e)
+        {
+            string name = txbFoodName.Text;
+            int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
+            float price = (float)nmFoodPrice.Value;
+            int id = Convert.ToInt32(txbFoodId.Text);
+
+            if (FoodDAO.Instance.UpdateFood(id, name, categoryID, price))
+            {
+                MessageBox.Show("Sửa món thành công");
+                LoadListFood();
+                if (updateFood != null)
+                    updateFood(this, new EventArgs());
+            }
+            else
+            {
+                MessageBox.Show("Có lỗi khi sửa thức ăn");
+            }
+        }
 
         private void btnDeleteFood_Click(object sender, EventArgs e)
         {
-            //int id = Convert.ToInt32(txbFoodID.Text);
-
-            int id = 1;
+            int id = Convert.ToInt32(txbFoodId.Text);
 
             if (FoodDAO.Instance.DeleteFood(id))
             {
@@ -284,10 +317,46 @@ namespace Project_App.Forms
             LoadListFood();
         }
 
-        //private void btnViewBill_Click(object sender, EventArgs e)
-        //{
-        //    LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
-        //}
+        private void btnShowCategory_Click(object sender, EventArgs e)
+        {
+            LoadCategory();
+        }
+
+        private void btnAddCategory_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thêm danh mục");
+        }
+
+        private void btnEditCategory_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sửa danh mục");
+        }
+
+        private void btnDeleteCategory_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Xóa danh mục");
+        }
+
+        private void btnShowTable_Click(object sender, EventArgs e)
+        {
+            LoadTable();
+        }
+
+        private void btnAddTable_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thêm bàn");
+        }
+
+        private void btnEditTable_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sửa bàn");
+        }
+
+        private void btnDeleteTable_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Xóa bàn");
+        }
+
 
         private event EventHandler insertFood;
         public event EventHandler InsertFood
@@ -310,58 +379,56 @@ namespace Project_App.Forms
             remove { updateFood -= value; }
         }
 
-        #endregion              
-
-        //private void btnFristBillPage_Click(object sender, EventArgs e)
-        //{f
-        //    txbPageBill.Text = "1";
-        //}
-
-        //private void btnLastBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int sumRecord = BillDAO.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
-
-        //    int lastPage = sumRecord / 10;
-
-        //    if (sumRecord % 10 != 0)
-        //        lastPage++;
-
-        //    txbPageBill.Text = lastPage.ToString();
-        //}
-
-        //private void txbPageBill_TextChanged(object sender, EventArgs e)
-        //{
-        //    dtgvBill.DataSource = BillDAO.Instance.GetBillListByDateAndPage(dtpkFromDate.Value, dtpkToDate.Value, Convert.ToInt32(txbPageBill.Text));
-        //}
-
-        //private void btnPrevioursBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int page = Convert.ToInt32(txbPageBill.Text);
-
-        //    if (page > 1)
-        //        page--;
-
-        //    txbPageBill.Text = page.ToString();
-        //}
-
-        //private void btnNextBillPage_Click(object sender, EventArgs e)
-        //{
-        //    int page = Convert.ToInt32(txbPageBill.Text);
-        //    int sumRecord = BillDAO.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
-
-        //    if (page < sumRecord)
-        //        page++;
-
-        //    txbPageBill.Text = page.ToString();
-        //}
-
-        //private void fAdmin_Load(object sender, EventArgs e)
-        //{
-        //    // TODO: This line of code loads data into the 'QuanLyQuanCafeDataSet2.USP_GetListBillByDateForReport' table. You can move, or remove it, as needed.
-        //    this.USP_GetListBillByDateForReportTableAdapter.Fill(this.QuanLyQuanCafeDataSet2.USP_GetListBillByDateForReport, dtpkFromDate.Value, dtpkToDate.Value);
-
-        //    this.rpViewer.RefreshReport();
-        //}
-
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            LoadListBillByDate(dtpkFromDate.Value, dtpkToDate.Value);
+        }
     }
+
+    #endregion
+
+    //private void btnFristBillPage_Click(object sender, EventArgs e)
+    //{f
+    //    txbPageBill.Text = "1";
+    //}
+
+    //private void btnLastBillPage_Click(object sender, EventArgs e)
+    //{
+    //    int sumRecord = BillDAO.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
+
+    //    int lastPage = sumRecord / 10;
+
+    //    if (sumRecord % 10 != 0)
+    //        lastPage++;
+
+    //    txbPageBill.Text = lastPage.ToString();
+    //}
+
+    //private void txbPageBill_TextChanged(object sender, EventArgs e)
+    //{
+    //    dtgvBill.DataSource = BillDAO.Instance.GetBillListByDateAndPage(dtpkFromDate.Value, dtpkToDate.Value, Convert.ToInt32(txbPageBill.Text));
+    //}
+
+    //private void btnPrevioursBillPage_Click(object sender, EventArgs e)
+    //{
+    //    int page = Convert.ToInt32(txbPageBill.Text);
+
+    //    if (page > 1)
+    //        page--;
+
+    //    txbPageBill.Text = page.ToString();
+    //}
+
+    //private void btnNextBillPage_Click(object sender, EventArgs e)
+    //{
+    //    int page = Convert.ToInt32(txbPageBill.Text);
+    //    int sumRecord = BillDAO.Instance.GetNumBillListByDate(dtpkFromDate.Value, dtpkToDate.Value);
+
+    //    if (page < sumRecord)
+    //        page++;
+
+    //    txbPageBill.Text = page.ToString();
+    //}
+
+    //}
 }

@@ -28,6 +28,7 @@ namespace Project_App.Forms
             this.LoginAccount = acc;
             LoadDataTable();
             LoadCategory();
+            LoadComboboxTable(cbSwichTable);
         }
         static int discount = 1;
 
@@ -217,14 +218,14 @@ namespace Project_App.Forms
             Table table = lsvBill.Tag as Table;
 
             int idBill = BillDAO.Instance.GetUncheckBillIDByTableID(table.Id);
-            discount = (int)nmFoodCount.Value;
+            discount = (int)numberDiscount.Value;
 
             double totalPrice = Convert.ToDouble(txbTotalPrice.Text.Split(',')[0]);
             double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
 
             if (idBill != -1)
             {
-                if (MessageBox.Show(string.Format("Bạn có chắc thanh toán hóa đơn cho bàn {0}\nTổng tiền - (Tổng tiền / 100) x Giảm giá\n=> {1} - ({1} / 100) x {2} = {3}", table.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+                if (MessageBox.Show(string.Format("Bạn có chắc thanh toán hóa đơn cho bàn {0}\nTổng tiền - (Tổng tiền / 100) x Giảm giá\n=> {1} - ({1} / 100) x {2} = {3}.000", table.Name, totalPrice, discount, finalTotalPrice), "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
                 {
                     BillDAO.Instance.CheckOut(idBill, discount, (float)finalTotalPrice);
                     showBill(table.Id);
@@ -252,9 +253,22 @@ namespace Project_App.Forms
 
         private void btnDiscount_Click(object sender, EventArgs e)
         {
-            int value = (int)numberDiscount.Value;
-            discount = value;
+            discount = (int)numberDiscount.Value;
+            double totalPrice = Convert.ToDouble(txbTotalPrice.Text.Split(',')[0]);
+            double finalTotalPrice = totalPrice - (totalPrice / 100) * discount;
+            txbTotalPrice.Text = $"{finalTotalPrice.ToString()}.000";
             MessageBox.Show($"Giảm giá thành công {discount} %");
+        }
+
+        private void btnSwichTable_Click(object sender, EventArgs e)
+        {
+            int id1 = (lsvBill.Tag as Table).Id;
+            int id2 = (cbSwichTable.SelectedItem as Table).Id;
+            if(MessageBox.Show($"Bạn có thật sự muốn chuyển bàn {(lsvBill.Tag as Table).Name}  qua bàn {(cbSwichTable.SelectedItem as Table).Name}", "Thông báo", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                TableDAO.Instance.SwitchTable(id1, id2);
+                LoadDataTable();
+            }
         }
     }
 }

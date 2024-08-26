@@ -35,7 +35,7 @@ namespace Project_App.DAO
 
             string query = $"SELECT * FROM Account WHERE UserName = N'{username}' and Password = N'{password}'";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, hasPass /*list*/});
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[] { username, hasPass});
 
             return result.Rows.Count > 0;
         }

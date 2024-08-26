@@ -89,7 +89,7 @@
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(256, 22);
             this.txbPassword.TabIndex = 1;
-            this.txbPassword.Text = "1";
+            this.txbPassword.Text = "1962026656160185351301320480154111117132155";
             this.txbPassword.UseSystemPasswordChar = true;
             // 
             // label2

@@ -1,74 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\Csharp\\Project_App\\",
+  "WorkspaceRootPath": "D:\\Code\\Csharp\\winform\\Project_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|d:\\code\\csharp\\project_app\\forms\\ftablemange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\ftablemange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\ftablemange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\ftablemange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|d:\\code\\csharp\\winform\\project_app\\forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\faccountprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|d:\\code\\csharp\\winform\\project_app\\forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\fadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|d:\\code\\csharp\\winform\\project_app\\dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\ftablemange.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\ftablemange.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\billinfodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\billinfodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\billdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\accountdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\tabledao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\fooddao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\fooddao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:dao\\categorydao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|D:\\Code\\Csharp\\Project_App\\forms\\faccountprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\faccountprofile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|d:\\code\\csharp\\winform\\project_app\\forms\\fadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F29699A-CB03-415E-8DE7-01CB26D55B2F}|Project_App.csproj|solutionrelative:forms\\fadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,205 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "fLogin.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fLogin.cs",
-              "RelativeDocumentMoniker": "Forms\\fLogin.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fLogin.cs",
-              "RelativeToolTip": "Forms\\fLogin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:17:56.105Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "fAdmin.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fAdmin.cs",
-              "RelativeDocumentMoniker": "Forms\\fAdmin.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fAdmin.cs [Design]",
-              "RelativeToolTip": "Forms\\fAdmin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:43:44.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "fAdmin.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fAdmin.cs",
-              "RelativeDocumentMoniker": "Forms\\fAdmin.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fAdmin.cs",
-              "RelativeToolTip": "Forms\\fAdmin.cs",
-              "ViewState": "AQIAAFoBAAAAAAAAAAAhwGcBAACbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:43:55.507Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "fAccountProfile.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.cs",
-              "RelativeDocumentMoniker": "Forms\\fAccountProfile.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.cs [Design]",
-              "RelativeToolTip": "Forms\\fAccountProfile.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:47:43.658Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "fAccountProfile.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.cs",
-              "RelativeDocumentMoniker": "Forms\\fAccountProfile.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.cs",
-              "RelativeToolTip": "Forms\\fAccountProfile.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAuwFEAAAAPAAAA",
+              "Title": "fAdmin.Designer.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.Designer.cs",
+              "RelativeDocumentMoniker": "Forms\\fAdmin.Designer.cs",
+              "ToolTip": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.Designer.cs",
+              "RelativeToolTip": "Forms\\fAdmin.Designer.cs",
+              "ViewState": "AQIAAKkBAAAAAAAAAAAowLgBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:47:47.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "fTableMange.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.cs",
-              "RelativeDocumentMoniker": "Forms\\fTableMange.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.cs [Design]",
-              "RelativeToolTip": "Forms\\fTableMange.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:33:04.439Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "fTableMange.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.cs",
-              "RelativeDocumentMoniker": "Forms\\fTableMange.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.cs",
-              "RelativeToolTip": "Forms\\fTableMange.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAD4v4MAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:32:37.463Z",
+              "WhenOpened": "2024-08-26T16:16:29.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "fLogin.cs [Design]",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fLogin.cs",
-              "RelativeDocumentMoniker": "Forms\\fLogin.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fLogin.cs [Design]",
-              "RelativeToolTip": "Forms\\fLogin.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Table.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\winform\\Project_App\\DTO\\Table.cs",
+              "RelativeDocumentMoniker": "DTO\\Table.cs",
+              "ToolTip": "D:\\Code\\Csharp\\winform\\Project_App\\DTO\\Table.cs",
+              "RelativeToolTip": "DTO\\Table.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwB8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:17:30.391Z"
+              "WhenOpened": "2024-08-26T16:13:21.808Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "fTableMange.Designer.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\fTableMange.Designer.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fTableMange.Designer.cs",
-              "RelativeToolTip": "Forms\\fTableMange.Designer.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAhwMQAAAAPAAAA",
+              "DocumentIndex": 0,
+              "Title": "fAdmin.cs",
+              "DocumentMoniker": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.cs",
+              "RelativeDocumentMoniker": "Forms\\fAdmin.cs",
+              "ToolTip": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.cs",
+              "RelativeToolTip": "Forms\\fAdmin.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAUwGQAAAB+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T10:22:33.365Z"
+              "WhenOpened": "2024-08-26T14:09:22.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccountDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\AccountDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\AccountDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\AccountDAO.cs",
-              "RelativeToolTip": "DAO\\AccountDAO.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAuwCEAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "fAdmin.cs [Design]",
+              "DocumentMoniker": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.cs",
+              "RelativeDocumentMoniker": "Forms\\fAdmin.cs",
+              "ToolTip": "D:\\Code\\Csharp\\winform\\Project_App\\Forms\\fAdmin.cs [Design]",
+              "RelativeToolTip": "Forms\\fAdmin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:19:02.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "BillDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\BillDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\BillDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\BillDAO.cs",
-              "RelativeToolTip": "DAO\\BillDAO.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAADgvyQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:23:41.368Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FoodDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\FoodDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\FoodDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\FoodDAO.cs",
-              "RelativeToolTip": "DAO\\FoodDAO.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAAwGMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:29:58.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DataProvider.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\DataProvider.cs",
-              "RelativeDocumentMoniker": "DAO\\DataProvider.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\DataProvider.cs",
-              "RelativeToolTip": "DAO\\DataProvider.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAASwBYAAABzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T10:04:50.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CategoryDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\CategoryDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\CategoryDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\CategoryDAO.cs",
-              "RelativeToolTip": "DAO\\CategoryDAO.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwDYAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:29:10.098Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BillInfoDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\BillInfoDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\BillInfoDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\BillInfoDAO.cs",
-              "RelativeToolTip": "DAO\\BillInfoDAO.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAgwCcAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:26:29.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TableDAO.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\DAO\\TableDAO.cs",
-              "RelativeDocumentMoniker": "DAO\\TableDAO.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\DAO\\TableDAO.cs",
-              "RelativeToolTip": "DAO\\TableDAO.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwCQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T10:14:04.639Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "fAccountProfile.Designer.cs",
-              "DocumentMoniker": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.Designer.cs",
-              "RelativeDocumentMoniker": "Forms\\fAccountProfile.Designer.cs",
-              "ToolTip": "D:\\Code\\Csharp\\Project_App\\Forms\\fAccountProfile.Designer.cs",
-              "RelativeToolTip": "Forms\\fAccountProfile.Designer.cs",
-              "ViewState": "AQIAANEAAAAAAAAAAAAhwNEAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:10:51.818Z"
+              "WhenOpened": "2024-08-26T14:09:06.682Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

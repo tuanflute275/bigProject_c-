@@ -329,7 +329,7 @@ BEGIN
 		PRINT @idBill
 		PRINT @count
 		
-		UPDATE dbo.TableFood SET status = N'Có người' WHERE id = @idTable		
+		UPDATE dbo.TableFood SET status = N'Có người' WHERE id = @idTable	
 		
 	END		
 	ELSE
@@ -338,7 +338,7 @@ BEGIN
 		PRINT @idBill
 		PRINT @count
 	UPDATE dbo.TableFood SET status = N'Trống' WHERE id = @idTable	
-	end
+	END
 	
 END
 GO

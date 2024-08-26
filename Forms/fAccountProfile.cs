@@ -16,50 +16,50 @@ namespace Project_App.Forms
     {
         private Account loginAccount;
 
-        //public Account LoginAccount
-        //{
-        //    get { return loginAccount; }
-        //    set { loginAccount = value; ChangeAccount(loginAccount); }
-        //}
+        public Account LoginAccount
+        {
+            get { return loginAccount; }
+            set { loginAccount = value; changeaccount(loginAccount); }
+        }
         public fAccountProfile(Account acc)
         {
             InitializeComponent();
 
-            //LoginAccount = acc;
+            LoginAccount = acc;
         }
 
-        //void changeaccount(account acc)
-        //{
-        //    //txbusername.text = loginaccount.username;
-        //    //txbdisplayname.text = loginaccount.displayname;
-        //}
+        void changeaccount(Account acc)
+        {
+            TxbUserName.Text = loginAccount.UserName;
+            txbDisplayName.Text = loginAccount.DisplayName;
+        }
 
-        //void UpdateAccountInfo()
-        //{
-        //    string displayName = txbDisplayName.Text;
-        //    string password = txbPassWord.Text;
-        //    string newpass = txbNewPass.Text;
-        //    string reenterPass = txbReEnterPass.Text;
-        //    string userName = txbUserName.Text;
+        void UpdateAccountInfo()
+        {
+            string displayName = txbDisplayName.Text;
+            string password = txbPassWord.Text;
+            string newpass = txbNewPass.Text;
+            string reenterPass = txbReEnterPass.Text;
+            string userName = TxbUserName.Text;
 
-        //    if (!newpass.Equals(reenterPass))
-        //    {
-        //        MessageBox.Show("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới!");
-        //    }
-        //    else
-        //    {
-        //        if (AccountDAO.Instance.UpdateAccount(userName, displayName, password, newpass))
-        //        {
-        //            MessageBox.Show("Cập nhật thành công");
-        //            if (updateAccount != null)
-        //                updateAccount(this, new AccountEvent(AccountDAO.Instance.GetAccountByUserName(userName)));
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("Vui lòng điền đúng mật khấu");
-        //        }
-        //    }
-        //}
+            if (!newpass.Equals(reenterPass))
+            {
+                MessageBox.Show("Vui lòng nhập lại mật khẩu đúng với mật khẩu mới!");
+            }
+            else
+            {
+                if (AccountDAO.Instance.UpdateAccount(userName, displayName, password, newpass))
+                {
+                    MessageBox.Show("Cập nhật thành công");
+                    if (updateAccount != null)
+                        updateAccount(this, new AccountEvent(AccountDAO.Instance.GetAccountByUserName(userName)));
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng điền đúng mật khấu");
+                }
+            }
+        }
 
         private event EventHandler<AccountEvent> updateAccount;
         public event EventHandler<AccountEvent> UpdateAccount
@@ -75,7 +75,7 @@ namespace Project_App.Forms
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //UpdateAccountInfo();
+            UpdateAccountInfo();
         }
     }
 
